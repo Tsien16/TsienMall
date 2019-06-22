@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://106.14.41.77:3306/tsien_mall?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      username: root
+      password: QWer12#$
