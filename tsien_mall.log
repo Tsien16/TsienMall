@@ -58,3 +58,20 @@ Caused by: org.springframework.core.convert.ConverterNotFoundException: No conve
 2019-06-23 10:27:22.281  INFO 16204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2019-06-23 10:27:22.337  INFO 16204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2019-06-23 10:27:22.341  INFO 16204 --- [restartedMain] com.tsien.mall.Application               : Started Application in 2.656 seconds (JVM running for 4.97)
+2019-06-23 11:42:15.765  INFO 27528 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 27528 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
+2019-06-23 11:42:15.768 DEBUG 27528 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-23 11:42:15.770  INFO 27528 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
+2019-06-23 11:42:15.831  INFO 27528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-23 11:42:15.832  INFO 27528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-23 11:42:17.554  INFO 27528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-23 11:42:17.579  INFO 27528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-23 11:42:17.580  INFO 27528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-23 11:42:17.779  INFO 27528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-23 11:42:17.780  INFO 27528 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1948 ms
+2019-06-23 11:42:17.895  INFO 27528 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-06-23 11:42:18.117  INFO 27528 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-06-23 11:42:18.781  INFO 27528 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-23 11:42:18.888  WARN 27528 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-06-23 11:42:19.075  INFO 27528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-23 11:42:19.138  INFO 27528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-23 11:42:19.142  INFO 27528 --- [restartedMain] com.tsien.mall.Application               : Started Application in 3.909 seconds (JVM running for 6.631)
