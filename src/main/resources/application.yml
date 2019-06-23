@@ -10,3 +10,9 @@ pagehelper:
   reasonable: true
   support-methods-arguments: true
   params: count=countSql
+
+logging:
+  level:
+    com.tsien: debug
+  path: logs
+  file: tsien_mall.log
