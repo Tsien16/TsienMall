@@ -1,6 +1,7 @@
 package com.tsien.mall.dao;
 
 import com.tsien.mall.model.UserDO;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * Created with IntelliJ IDEA.
@@ -59,4 +60,29 @@ public interface UserMapper {
      * @return 更新的数量
      */
     int updateByPrimaryKey(UserDO record);
+
+    /**
+     * 通过用户统计用户数量
+     *
+     * @param username 用户名
+     * @return 该用户名的数量
+     */
+    int countUsersByUsername(String username);
+
+    /**
+     * 通过邮箱统计用户数量
+     *
+     * @param email 邮箱
+     * @return 该邮箱的数量
+     */
+    int countUsersByEmail(String email);
+
+    /**
+     * 根据用户名密码查询用户
+     *
+     * @param username 用户名
+     * @param password 密码
+     * @return 用户
+     */
+    UserDO getUserByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
 }

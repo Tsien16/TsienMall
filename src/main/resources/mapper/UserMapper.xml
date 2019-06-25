@@ -160,4 +160,22 @@
         where id = #{id,jdbcType=INTEGER}
     </update>
 
+    <select id="countUsersByUsername" parameterType="java.lang.String" resultType="int">
+        select count(1)
+        from mall_user
+        where username = #{username}
+    </select>
+
+    <select id="countUsersByEmail" parameterType="java.lang.String" resultType="int">
+        select count(1)
+        from mall_user
+        where email = #{email}
+    </select>
+
+    <select id="getUserByUsernameAndPassword" parameterType="map" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_user where username=#{username} and password=#{password}
+    </select>
+
 </mapper>
