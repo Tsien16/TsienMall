@@ -59,7 +59,6 @@ public class UserController {
 
     @PostMapping("register.do")
     public ServerResponse<String> register(UserDO userDO) {
-        session.removeAttribute(Const.CURRENT_USER);
         return ServerResponse.createBySuccess();
     }
 
