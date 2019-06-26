@@ -1,6 +1,6 @@
 package com.tsien.mall.service.impl;
 
-import com.tsien.mall.constant.Const;
+import com.tsien.mall.constant.RoleEnum;
 import com.tsien.mall.dao.UserMapper;
 import com.tsien.mall.model.UserDO;
 import com.tsien.mall.service.UserService;
@@ -66,7 +66,7 @@ public class UserServiceImpl implements UserService {
         }
 
         // 设置角色为普通用户
-        userDO.setRole(Const.Role.ROLE_CUSTOMER);
+        userDO.setRole(RoleEnum.ROLE_CUSTOMER.getCode());
 
         //密码MD5加密
         userDO.setPassword(MD5Util.md5EncodeUtf8(userDO.getPassword()));
