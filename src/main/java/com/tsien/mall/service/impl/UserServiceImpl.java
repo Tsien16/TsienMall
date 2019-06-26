@@ -33,9 +33,10 @@ public class UserServiceImpl implements UserService {
             return ServerResponse.createByErrorMessage("用户名不存在");
         }
 
-        //TODO 密码登陆MD5
+        // 密码通过MD5加密
+        String md5Password = MD5Util.md5EncodeUtf8(password);
 
-        UserDO userDO = userMapper.getUserByUsernameAndPassword(username, password);
+        UserDO userDO = userMapper.getUserByUsernameAndPassword(username, md5Password);
         if (userDO == null) {
             return ServerResponse.createByErrorMessage("密码错误");
         }
@@ -51,6 +52,7 @@ public class UserServiceImpl implements UserService {
      * @param userDO 用户实体
      * @return 注册结果
      */
+    @Override
     public ServerResponse<String> register(UserDO userDO) {
 
         int resultCount = userMapper.countUsersByUsername(userDO.getUsername());
@@ -68,7 +70,11 @@ public class UserServiceImpl implements UserService {
 
         //密码MD5加密
         userDO.setPassword(MD5Util.md5EncodeUtf8(userDO.getPassword()));
-        return null;
+        resultCount = userMapper.insert(userDO);
+        if (resultCount == 0) {
+            return ServerResponse.createByErrorMessage("注册失败");
+        }
+        return ServerResponse.createBySuccessMessage("注册成功");
 
     }
 }

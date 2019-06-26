@@ -57,9 +57,15 @@ public class UserController {
         return ServerResponse.createBySuccess();
     }
 
+    /**
+     * 用户注册
+     *
+     * @param userDO 用户实体
+     * @return 注册结果
+     */
     @PostMapping("register.do")
     public ServerResponse<String> register(UserDO userDO) {
-        return ServerResponse.createBySuccess();
+        return userService.register(userDO);
     }
 
 

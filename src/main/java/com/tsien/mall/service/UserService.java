@@ -21,4 +21,12 @@ public interface UserService {
      * @return 包含用户信息的response
      */
     ServerResponse<UserDO> login(String username, String password);
+
+    /**
+     * 用户注册
+     *
+     * @param userDO 用户实体
+     * @return 注册结果
+     */
+    ServerResponse<String> register(UserDO userDO);
 }
