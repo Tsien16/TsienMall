@@ -4,9 +4,7 @@ import com.tsien.mall.constant.Const;
 import com.tsien.mall.model.UserDO;
 import com.tsien.mall.service.UserService;
 import com.tsien.mall.util.ServerResponse;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -34,7 +32,7 @@ public class UserController {
      * @param password password
      * @return response
      */
-    @PostMapping("login.do")
+    @GetMapping("login.do")
     public ServerResponse<UserDO> login(HttpSession session, String username, String password) {
 
         ServerResponse<UserDO> response = userService.login(username, password);
@@ -51,7 +49,7 @@ public class UserController {
      * @param session session
      * @return 删除成功的信息
      */
-    @PostMapping("logout.do")
+    @GetMapping("logout.do")
     public ServerResponse<String> logout(HttpSession session) {
         session.removeAttribute(Const.CURRENT_USER);
         return ServerResponse.createBySuccess();
@@ -63,7 +61,7 @@ public class UserController {
      * @param userDO 用户实体
      * @return 注册结果
      */
-    @PostMapping("register.do")
+    @GetMapping("register.do")
     public ServerResponse<String> register(UserDO userDO) {
         return userService.register(userDO);
     }
@@ -75,10 +73,12 @@ public class UserController {
      * @param type   email/username
      * @return 检查结果
      */
-    @PostMapping("check_valid.do")
+    @GetMapping("check_valid.do")
     public ServerResponse<String> checkValid(String string, String type) {
         return userService.checkValid(string, type);
     }
+
+
 
 
 }
