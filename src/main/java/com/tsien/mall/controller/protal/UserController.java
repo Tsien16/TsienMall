@@ -1,6 +1,7 @@
 package com.tsien.mall.controller.protal;
 
 import com.tsien.mall.constant.Const;
+import com.tsien.mall.constant.ResponseCodeEnum;
 import com.tsien.mall.model.UserDO;
 import com.tsien.mall.service.UserService;
 import com.tsien.mall.util.ServerResponse;
@@ -78,7 +79,128 @@ public class UserController {
         return userService.checkValid(string, type);
     }
 
+    /**
+     * 获取用户信息
+     *
+     * @param session session
+     * @return 用户信息
+     */
+    @GetMapping("get_user_info.do")
+    public ServerResponse<UserDO> getUserInfo(HttpSession session) {
+        UserDO userDO = (UserDO) session.getAttribute(Const.CURRENT_USER);
+        if (userDO != null) {
+            ServerResponse.createBySuccess(userDO);
+        }
 
+        return ServerResponse.createByErrorMessage("用户未登录，无法获取当前的用户信息");
+    }
 
+    /**
+     * 获取忘记密码提示问题
+     *
+     * @param username username
+     * @return 忘记密码提示问题
+     */
+    @GetMapping("get_forget_password_prompts.do")
+    public ServerResponse<String> getForgetPasswordPrompts(String username) {
+        return userService.getQuestion(username);
+    }
+
+    /**
+     * 检查问题的答案
+     *
+     * @param username username
+     * @param question question
+     * @param answer   answer
+     * @return 验证结果
+     */
+    @GetMapping("check_answer.do")
+    public ServerResponse<String> checkAnswer(String username, String question, String answer) {
+        return userService.checkAnswer(username, question, answer);
+
+    }
+
+    /**
+     * 未登录状态下的修改密码
+     *
+     * @param username    username
+     * @param newPassword newPassword
+     * @param forgetToken forgetToken
+     * @return 修改密码的结果
+     */
+    @GetMapping("forget_reset_password.do")
+    public ServerResponse<String> forgetResetPassword(String username, String newPassword, String forgetToken) {
+        return userService.forgetResetPassword(username, newPassword, forgetToken);
+
+    }
+
+    /**
+     * 登陆状态下重置密码
+     *
+     * @param session     session
+     * @param oldPassword oldPassword
+     * @param newPassword newPassword
+     * @return 重置的结果
+     */
+    @GetMapping("reset_password.do")
+    public ServerResponse<String> resetPassword(HttpSession session, String oldPassword, String newPassword) {
+
+        // 判断用户登陆状态
+        UserDO userDO = (UserDO) session.getAttribute(Const.CURRENT_USER);
+        if (userDO == null) {
+            return ServerResponse.createByErrorMessage("用户未登录");
+        }
+
+        return userService.resetPassword(userDO, oldPassword, newPassword);
+
+    }
+
+    /**
+     * 获取用户信息
+     *
+     * @param session session
+     * @return 用户信息
+     */
+    @GetMapping("get_userInfo.do")
+    public ServerResponse<UserDO> getUserInformation(HttpSession session) {
+
+        // 判断用户登陆状态
+        UserDO userDO = (UserDO) session.getAttribute(Const.CURRENT_USER);
+        if (userDO == null) {
+            return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.NEED_LOGIN.getCode(), "用户未登录,需要强制登陆");
+        }
+
+        return userService.getUserInfo(userDO.getId());
+
+    }
+
+    /**
+     * 更新个人用户信息
+     *
+     * @param session session
+     * @param userDO  userDO
+     * @return 更新的结果
+     */
+    @GetMapping("update_userInfo.do")
+    public ServerResponse<UserDO> updateUserInfo(HttpSession session, UserDO userDO) {
+
+        // 判断用户登陆状态
+        UserDO currentUser = (UserDO) session.getAttribute(Const.CURRENT_USER);
+        if (currentUser == null) {
+            return ServerResponse.createByErrorMessage("用户未登录");
+        }
+
+        // userDo里没userId
+        userDO.setId(currentUser.getId());
+
+        ServerResponse<UserDO> response = userService.updateUserInfo(userDO);
+
+        if (response.isSuccess()) {
+            session.setAttribute(Const.CURRENT_USER, response.getData());
+        }
+
+        return response;
+
+    }
 
 }

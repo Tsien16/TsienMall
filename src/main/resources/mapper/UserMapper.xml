@@ -178,4 +178,39 @@
         from mall_user where username=#{username} and password=#{password}
     </select>
 
+    <select id="getQuestionByUsername" parameterType="string" resultType="string">
+        select question
+        from mall_user
+        where username = #{username}
+    </select>
+
+    <select id="countUsersByUsernameAndQuestionAndAnswer" parameterType="map" resultType="int">
+        select count(1)
+        from mall_user
+        where username = #{username}
+          and question = #{question}
+          and answer = #{answer}
+    </select>
+
+    <update id="updatePasswordByUsername" parameterType="map">
+        update mall_user
+        set password   = #{password},
+            update_time=now()
+        where username = #{username}
+    </update>
+
+    <select id="countUsersByUserIdAndPassword" parameterType="map" resultType="int">
+        select count(1)
+        from mall_user
+        where id = #{userId}
+          and password = #{password}
+    </select>
+
+    <select id="countUsersByUserIdAndEmail" parameterType="map" resultType="int">
+        select count(1)
+        from mall_user
+        where email = #{email}
+          and id != #{userId}
+    </select>
+
 </mapper>

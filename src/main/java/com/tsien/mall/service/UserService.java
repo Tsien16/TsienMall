@@ -39,5 +39,59 @@ public interface UserService {
      */
     ServerResponse<String> checkValid(String string, String type);
 
+    /**
+     * 获取找回密码提示的问题
+     *
+     * @param username username
+     * @return 密码提示问题
+     */
+    ServerResponse<String> getQuestion(String username);
+
+    /**
+     * 检查问题的答案
+     *
+     * @param username username
+     * @param question question
+     * @param answer   answer
+     * @return 验证结果
+     */
+    ServerResponse<String> checkAnswer(String username, String question, String answer);
+
+    /**
+     * 未登录状态下的修改密码
+     *
+     * @param username    username
+     * @param newPassword newPassword
+     * @param forgetToken forgetToken
+     * @return 修改密码的结果
+     */
+    ServerResponse<String> forgetResetPassword(String username, String newPassword, String forgetToken);
+
+    /**
+     * 登陆状态下重置密码
+     *
+     * @param userDO      userDO
+     * @param oldPassword oldPassword
+     * @param newPassword newPassword
+     * @return 重置密码的结果
+     */
+    ServerResponse<String> resetPassword(UserDO userDO, String oldPassword, String newPassword);
+
+    /**
+     * 获取用户信息
+     *
+     * @param userId userId
+     * @return 用户信息
+     */
+    ServerResponse<UserDO> getUserInfo(Integer userId);
+
+    /**
+     * 更新用户个人信息
+     *
+     * @param userDO userDO
+     * @return 更新的结果
+     */
+    ServerResponse<UserDO> updateUserInfo(UserDO userDO);
+
 
 }

@@ -85,4 +85,52 @@ public interface UserMapper {
      * @return 用户
      */
     UserDO getUserByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+
+    /**
+     * 根据用户名获取忘记密码提示的问题
+     *
+     * @param username username
+     * @return 忘记密码提示的问题
+     */
+    String getQuestionByUsername(String username);
+
+    /**
+     * 通过用户名、问题、答案查询用户数量
+     *
+     * @param username username
+     * @param question question
+     * @param answer   answer
+     * @return 结果的数量
+     */
+    int countUsersByUsernameAndQuestionAndAnswer(@Param("username") String username, @Param("question") String question,
+                                                 @Param("answer") String answer);
+
+
+    /**
+     * 通过用户名更新密码
+     *
+     * @param username username
+     * @param password password
+     * @return 更新的行数
+     */
+    int updatePasswordByUsername(@Param("username") String username, @Param("password") String password);
+
+    /**
+     * 根据userId和password查找用户
+     *
+     * @param userId   userId
+     * @param password password
+     * @return 匹配的行数
+     */
+    int countUsersByUserIdAndPassword(@Param("userId") Integer userId, @Param("password") String password);
+
+    /**
+     * 检查不是某userId下的email数量
+     *
+     * @param userId userId
+     * @param email  email
+     * @return 校验结果
+     */
+    int countUsersByUserIdAndEmail(@Param("userId") Integer userId, @Param("email") String email);
+
 }

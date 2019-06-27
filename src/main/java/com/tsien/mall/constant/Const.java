@@ -16,4 +16,6 @@ public class Const {
 
     public static final String USERNAME = "username";
 
+    public static final String NULL = "null";
+
 }
