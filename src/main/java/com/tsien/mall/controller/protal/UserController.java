@@ -19,7 +19,7 @@ import javax.servlet.http.HttpSession;
  */
 
 @RestController
-@RequestMapping("/user/")
+@RequestMapping("/user")
 public class UserController {
 
     @Resource
