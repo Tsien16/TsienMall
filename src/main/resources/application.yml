@@ -23,6 +23,8 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+  configuration: # 配置mybatis答应日志
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
 
 pagehelper:
   helper-dialect: mysql
@@ -32,7 +34,7 @@ pagehelper:
 
 logging:
   level:
-    com.tsien: debug
+    com.tsien: info
   path: logs
   file: tsien_mall.log
 
