@@ -33,7 +33,7 @@ public class UserController {
      * @param password password
      * @return response
      */
-    @GetMapping("login.do")
+    @PostMapping("login.do")
     public ServerResponse<UserDO> login(HttpSession session, String username, String password) {
 
         ServerResponse<UserDO> response = userService.login(username, password);
@@ -50,7 +50,7 @@ public class UserController {
      * @param session session
      * @return 删除成功的信息
      */
-    @GetMapping("logout.do")
+    @PostMapping("logout.do")
     public ServerResponse<String> logout(HttpSession session) {
         session.removeAttribute(Const.CURRENT_USER);
         return ServerResponse.createBySuccess();
@@ -62,7 +62,7 @@ public class UserController {
      * @param userDO 用户实体
      * @return 注册结果
      */
-    @GetMapping("register.do")
+    @PostMapping("register.do")
     public ServerResponse<String> register(UserDO userDO) {
         return userService.register(userDO);
     }
@@ -74,7 +74,7 @@ public class UserController {
      * @param type   email/username
      * @return 检查结果
      */
-    @GetMapping("check_valid.do")
+    @PostMapping("check_valid.do")
     public ServerResponse<String> checkValid(String string, String type) {
         return userService.checkValid(string, type);
     }
@@ -85,7 +85,7 @@ public class UserController {
      * @param session session
      * @return 用户信息
      */
-    @GetMapping("get_user_info.do")
+    @PostMapping("get_user_info.do")
     public ServerResponse<UserDO> getUserInfo(HttpSession session) {
         UserDO userDO = (UserDO) session.getAttribute(Const.CURRENT_USER);
         if (userDO != null) {
@@ -101,7 +101,7 @@ public class UserController {
      * @param username username
      * @return 忘记密码提示问题
      */
-    @GetMapping("get_forget_password_prompts.do")
+    @PostMapping("get_forget_password_prompts.do")
     public ServerResponse<String> getForgetPasswordPrompts(String username) {
         return userService.getQuestion(username);
     }
@@ -114,7 +114,7 @@ public class UserController {
      * @param answer   answer
      * @return 验证结果
      */
-    @GetMapping("check_answer.do")
+    @PostMapping("check_answer.do")
     public ServerResponse<String> checkAnswer(String username, String question, String answer) {
         return userService.checkAnswer(username, question, answer);
 
@@ -128,7 +128,7 @@ public class UserController {
      * @param forgetToken forgetToken
      * @return 修改密码的结果
      */
-    @GetMapping("forget_reset_password.do")
+    @PostMapping("forget_reset_password.do")
     public ServerResponse<String> forgetResetPassword(String username, String newPassword, String forgetToken) {
         return userService.forgetResetPassword(username, newPassword, forgetToken);
 
@@ -142,7 +142,7 @@ public class UserController {
      * @param newPassword newPassword
      * @return 重置的结果
      */
-    @GetMapping("reset_password.do")
+    @PostMapping("reset_password.do")
     public ServerResponse<String> resetPassword(HttpSession session, String oldPassword, String newPassword) {
 
         // 判断用户登陆状态
@@ -161,7 +161,7 @@ public class UserController {
      * @param session session
      * @return 用户信息
      */
-    @GetMapping("get_userInfo.do")
+    @PostMapping("get_userInfo.do")
     public ServerResponse<UserDO> getUserInformation(HttpSession session) {
 
         // 判断用户登陆状态
@@ -181,7 +181,7 @@ public class UserController {
      * @param userDO  userDO
      * @return 更新的结果
      */
-    @GetMapping("update_userInfo.do")
+    @PostMapping("update_userInfo.do")
     public ServerResponse<UserDO> updateUserInfo(HttpSession session, UserDO userDO) {
 
         // 判断用户登陆状态

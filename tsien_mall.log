@@ -1,659 +1,88 @@
-2019-06-26 22:00:47.536  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:00:47.545 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:00:47.547  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:00:47.652  INFO 14672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-06-26 22:00:47.652  INFO 14672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-06-26 22:00:49.429  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:00:49.457  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:00:49.457  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:00:49.632  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:00:49.633  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1980 ms
-2019-06-26 22:00:49.769  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:00:50.002  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
-2019-06-26 22:00:50.644  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:00:50.793  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:00:50.978  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:00:51.048  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:00:51.053  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 4.223 seconds (JVM running for 7.291)
-2019-06-26 22:37:08.203  INFO 14672 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:37:08.210  INFO 14672 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2019-06-26 22:37:10.793  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:37:10.794 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:37:10.796  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:37:11.409  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:37:11.411  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:37:11.411  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:37:11.574  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:37:11.575  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 774 ms
-2019-06-26 22:37:11.643  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:37:11.727  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,druidDatasource} inited
-2019-06-26 22:37:11.989  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:37:12.074  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:37:12.163  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:37:12.234  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:37:12.236  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.488 seconds (JVM running for 2188.473)
-2019-06-26 22:37:12.241  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 22:44:34.091  INFO 14672 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:44:34.095  INFO 14672 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
-2019-06-26 22:44:36.590  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:44:36.591 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:44:36.592  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:44:37.127  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:44:37.129  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:44:37.130  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:44:37.258  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:44:37.258  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 662 ms
-2019-06-26 22:44:37.306  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:44:37.396  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3,druidDatasource} inited
-2019-06-26 22:44:37.627  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:44:37.689  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:44:37.772  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:44:37.835  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:44:37.836  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.289 seconds (JVM running for 2634.073)
-2019-06-26 22:44:37.840  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 22:46:22.699  INFO 14672 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:46:22.703  INFO 14672 --- [Thread-15] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
-2019-06-26 22:46:25.113  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:46:25.114 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:46:25.115  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:46:25.688  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:46:25.691  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:46:25.692  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:46:25.836  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:46:25.837  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 719 ms
-2019-06-26 22:46:25.880  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:46:25.930  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4,druidDatasource} inited
-2019-06-26 22:46:26.055  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:46:26.103  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:46:26.162  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:46:26.206  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:46:26.207  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.145 seconds (JVM running for 2742.445)
-2019-06-26 22:46:26.210  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 22:46:46.944  INFO 14672 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:46:46.945  INFO 14672 --- [Thread-21] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
-2019-06-26 22:46:48.348  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:46:48.348 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:46:48.349  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:46:48.628  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:46:48.629  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:46:48.629  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:46:48.701  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:46:48.702  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 351 ms
-2019-06-26 22:46:48.729  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:46:48.778  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5,druidDatasource} inited
-2019-06-26 22:46:48.917  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:46:48.932  WARN 14672 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.check(com.tsien.mall.model.UserDO)
-to {POST /user/register.do}: There is already 'userController' bean method
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.register(com.tsien.mall.model.UserDO) mapped.
-2019-06-26 22:46:48.932  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:46:48.933  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
-2019-06-26 22:46:48.934  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-06-26 22:46:48.945  INFO 14672 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-06-26 22:46:48.964 ERROR 14672 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.check(com.tsien.mall.model.UserDO)
-to {POST /user/register.do}: There is already 'userController' bean method
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.register(com.tsien.mall.model.UserDO) mapped.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at com.tsien.mall.Application.main(Application.java:20) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.check(com.tsien.mall.model.UserDO)
-to {POST /user/register.do}: There is already 'userController' bean method
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.register(com.tsien.mall.model.UserDO) mapped.
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:na]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	... 21 common frames omitted
-
-2019-06-26 22:47:32.463  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:47:32.464 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:47:32.465  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:47:33.098  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:47:33.100  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:47:33.100  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:47:33.230  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:47:33.230  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 762 ms
-2019-06-26 22:47:33.275  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:47:33.378  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6,druidDatasource} inited
-2019-06-26 22:47:33.593  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:47:33.674  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:47:33.755  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:47:33.827  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:47:33.828  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.442 seconds (JVM running for 2810.066)
-2019-06-26 22:47:33.833  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 22:48:47.573  INFO 14672 --- [Thread-27] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:48:47.575  INFO 14672 --- [Thread-27] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
-2019-06-26 22:48:49.900  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:48:49.900 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:48:49.901  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:48:50.438  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:48:50.440  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:48:50.440  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:48:50.578  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:48:50.578  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 673 ms
-2019-06-26 22:48:50.640  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:48:50.751  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7,druidDatasource} inited
-2019-06-26 22:48:50.966  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:48:51.028  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:48:51.103  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:48:51.159  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:48:51.160  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.319 seconds (JVM running for 2887.398)
-2019-06-26 22:48:51.163  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 22:50:00.926  INFO 14672 --- [Thread-36] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:50:00.932  INFO 14672 --- [Thread-36] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
-2019-06-26 22:50:02.528  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:50:02.529 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:50:02.529  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:50:02.917  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:50:02.918  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:50:02.919  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:50:03.015  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:50:03.015  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 484 ms
-2019-06-26 22:50:03.062  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:50:03.155  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8,druidDatasource} inited
-2019-06-26 22:50:03.335  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:50:03.371  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:50:03.418  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:50:03.457  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:50:03.458  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 0.957 seconds (JVM running for 2959.696)
-2019-06-26 22:50:03.460  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 22:52:06.696  INFO 14672 --- [Thread-42] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:52:06.699  INFO 14672 --- [Thread-42] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closed
-2019-06-26 22:52:09.045  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:52:09.045 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:52:09.045  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:52:09.588  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:52:09.594  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:52:09.594  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:52:09.735  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:52:09.735  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 687 ms
-2019-06-26 22:52:09.788  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:52:09.872  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9,druidDatasource} inited
-2019-06-26 22:52:10.092  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:52:10.163  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:52:10.240  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:52:10.309  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:52:10.311  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.3 seconds (JVM running for 3086.548)
-2019-06-26 22:52:10.315  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 22:52:36.152  INFO 14672 --- [Thread-48] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:52:36.153  INFO 14672 --- [Thread-48] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closed
-2019-06-26 22:52:37.883  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:52:37.883 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:52:37.884  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:52:38.476  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:52:38.477  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:52:38.481  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:52:38.623  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:52:38.623  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 736 ms
-2019-06-26 22:52:38.671  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:52:38.750  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10,druidDatasource} inited
-2019-06-26 22:52:38.970  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:52:39.026  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:52:39.106  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:52:39.173  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:52:39.174  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.331 seconds (JVM running for 3115.412)
-2019-06-26 22:52:39.177  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 22:59:20.744  INFO 14672 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:59:20.748  INFO 14672 --- [Thread-54] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closed
-2019-06-26 22:59:23.287  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:59:23.288 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:59:23.288  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:59:23.875  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:59:23.877  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:59:23.877  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:59:24.025  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:59:24.026  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 735 ms
-2019-06-26 22:59:24.076  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:59:24.213  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11,druidDatasource} inited
-2019-06-26 22:59:24.512  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:59:24.573  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:59:24.675  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:59:24.754  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:59:24.755  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.502 seconds (JVM running for 3520.992)
-2019-06-26 22:59:24.757  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 22:59:47.514  INFO 14672 --- [Thread-60] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:59:47.516  INFO 14672 --- [Thread-60] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closed
-2019-06-26 22:59:49.145  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 22:59:49.145 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 22:59:49.145  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 22:59:49.483  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 22:59:49.484  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 22:59:49.485  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 22:59:49.562  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 22:59:49.562  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 415 ms
-2019-06-26 22:59:49.586  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 22:59:49.626  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12,druidDatasource} inited
-2019-06-26 22:59:49.726  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 22:59:49.756  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 22:59:49.792  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 22:59:49.820  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 22:59:49.821  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 0.702 seconds (JVM running for 3546.058)
-2019-06-26 22:59:49.822  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:01:47.483  INFO 14672 --- [Thread-66] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:01:47.485  INFO 14672 --- [Thread-66] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closed
-2019-06-26 23:01:49.053  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:01:49.054 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:01:49.054  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:01:49.489  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:01:49.491  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:01:49.491  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:01:49.620  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:01:49.620  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 564 ms
-2019-06-26 23:01:49.674  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:01:49.764  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13,druidDatasource} inited
-2019-06-26 23:01:49.952  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:01:50.012  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:01:50.077  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:01:50.147  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:01:50.147  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.118 seconds (JVM running for 3666.385)
-2019-06-26 23:01:50.150  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:03:09.100  INFO 14672 --- [Thread-72] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:03:09.101  INFO 14672 --- [Thread-72] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closed
-2019-06-26 23:03:11.437  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:03:11.437 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:03:11.438  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:03:12.077  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:03:12.079  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:03:12.080  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:03:12.223  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:03:12.223  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 783 ms
-2019-06-26 23:03:12.266  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:03:12.385  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14,druidDatasource} inited
-2019-06-26 23:03:12.589  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:03:12.651  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:03:12.720  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:03:12.777  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:03:12.778  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.379 seconds (JVM running for 3749.016)
-2019-06-26 23:03:12.781  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:07:53.727  INFO 14672 --- [Thread-78] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:07:53.728  INFO 14672 --- [Thread-78] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} closed
-2019-06-26 23:07:55.852  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:07:55.852 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:07:55.853  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:07:56.367  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:07:56.368  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:07:56.369  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:07:56.462  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:07:56.462  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 606 ms
-2019-06-26 23:07:56.495  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:07:56.585  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15,druidDatasource} inited
-2019-06-26 23:07:56.793  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:07:56.851  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:07:56.919  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:07:56.977  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:07:56.978  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.163 seconds (JVM running for 4033.215)
-2019-06-26 23:07:56.981  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:11:11.450  INFO 14672 --- [Thread-84] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:11:11.452  INFO 14672 --- [Thread-84] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} closed
-2019-06-26 23:11:13.858  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:11:13.860 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:11:13.861  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:11:14.614  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:11:14.617  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:11:14.617  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:11:14.775  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:11:14.776  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 911 ms
-2019-06-26 23:11:14.864  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:11:14.957  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16,druidDatasource} inited
-2019-06-26 23:11:15.216  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:11:15.304  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:11:15.385  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:11:15.452  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:11:15.453  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.681 seconds (JVM running for 4231.69)
-2019-06-26 23:11:15.457  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:11:30.120  INFO 14672 --- [Thread-90] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:11:30.124  INFO 14672 --- [Thread-90] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} closed
-2019-06-26 23:11:32.181  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:11:32.182 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:11:32.182  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:11:32.773  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:11:32.774  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:11:32.774  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:11:32.917  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:11:32.917  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 732 ms
-2019-06-26 23:11:32.969  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:11:33.069  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-17,druidDatasource} inited
-2019-06-26 23:11:33.287  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:11:33.349  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:11:33.425  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:11:33.469  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:11:33.470  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.323 seconds (JVM running for 4249.707)
-2019-06-26 23:11:33.472  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:12:08.429  INFO 14672 --- [Thread-96] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:12:08.431  INFO 14672 --- [Thread-96] com.alibaba.druid.pool.DruidDataSource   : {dataSource-17} closed
-2019-06-26 23:12:10.963  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:12:10.964 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:12:10.964  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:12:11.588  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:12:11.590  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:12:11.590  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:12:11.701  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:12:11.701  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 733 ms
-2019-06-26 23:12:11.768  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:12:11.878  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-18,druidDatasource} inited
-2019-06-26 23:12:12.087  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:12:12.149  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:12:12.238  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:12:12.309  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:12:12.309  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.386 seconds (JVM running for 4288.547)
-2019-06-26 23:12:12.312  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:12:20.767  INFO 14672 --- [Thread-102] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:12:20.768  INFO 14672 --- [Thread-102] com.alibaba.druid.pool.DruidDataSource   : {dataSource-18} closed
-2019-06-26 23:12:22.496  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:12:22.496 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:12:22.496  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:12:23.022  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:12:23.024  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:12:23.024  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:12:23.140  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:12:23.140  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 641 ms
-2019-06-26 23:12:23.184  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:12:23.289  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-19,druidDatasource} inited
-2019-06-26 23:12:23.473  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:12:23.525  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:12:23.580  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:12:23.631  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:12:23.632  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.181 seconds (JVM running for 4299.869)
-2019-06-26 23:12:23.634  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:14:02.904  INFO 14672 --- [Thread-108] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:14:02.906  INFO 14672 --- [Thread-108] com.alibaba.druid.pool.DruidDataSource   : {dataSource-19} closed
-2019-06-26 23:14:04.490  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:14:04.490 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:14:04.490  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:14:04.842  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:14:04.844  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:14:04.844  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:14:04.942  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:14:04.942  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 450 ms
-2019-06-26 23:14:04.986  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:14:05.050  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-20,druidDatasource} inited
-2019-06-26 23:14:05.217  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:14:05.285  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:14:05.364  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:14:05.443  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:14:05.444  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 0.98 seconds (JVM running for 4401.682)
-2019-06-26 23:14:05.447  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:14:33.373  INFO 14672 --- [Thread-114] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:14:33.375  INFO 14672 --- [Thread-114] com.alibaba.druid.pool.DruidDataSource   : {dataSource-20} closed
-2019-06-26 23:14:35.755  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:14:35.755 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:14:35.755  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:14:36.305  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:14:36.307  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:14:36.307  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:14:36.443  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:14:36.443  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 686 ms
-2019-06-26 23:14:36.496  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:14:36.586  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-21,druidDatasource} inited
-2019-06-26 23:14:36.783  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:14:36.843  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:14:36.918  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:14:36.984  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:14:36.985  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.26 seconds (JVM running for 4433.223)
-2019-06-26 23:14:36.988  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:14:50.523  INFO 14672 --- [Thread-120] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:14:50.526  INFO 14672 --- [Thread-120] com.alibaba.druid.pool.DruidDataSource   : {dataSource-21} closed
-2019-06-26 23:14:52.328  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:14:52.328 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:14:52.329  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:14:52.930  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:14:52.937  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:14:52.938  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:14:53.064  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:14:53.064  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 732 ms
-2019-06-26 23:14:53.116  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:14:53.224  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-22,druidDatasource} inited
-2019-06-26 23:14:53.426  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:14:53.490  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:14:53.577  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:14:53.639  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:14:53.640  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.344 seconds (JVM running for 4449.877)
-2019-06-26 23:14:53.642  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:16:06.618  INFO 14672 --- [Thread-126] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:16:06.620  INFO 14672 --- [Thread-126] com.alibaba.druid.pool.DruidDataSource   : {dataSource-22} closed
-2019-06-26 23:16:09.067  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:16:09.067 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:16:09.067  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:16:09.687  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:16:09.689  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:16:09.689  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:16:09.815  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:16:09.815  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 744 ms
-2019-06-26 23:16:09.865  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:16:09.953  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-23,druidDatasource} inited
-2019-06-26 23:16:10.158  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:16:10.189  WARN 14672 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.checkValid(java.lang.String,java.lang.String)
-to {POST /user/register.do}: There is already 'userController' bean method
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.register(com.tsien.mall.model.UserDO) mapped.
-2019-06-26 23:16:10.190  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:16:10.191  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-23} closed
-2019-06-26 23:16:10.192  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-06-26 23:16:10.204  INFO 14672 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-06-26 23:16:10.207 ERROR 14672 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.checkValid(java.lang.String,java.lang.String)
-to {POST /user/register.do}: There is already 'userController' bean method
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.register(com.tsien.mall.model.UserDO) mapped.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at com.tsien.mall.Application.main(Application.java:20) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.checkValid(java.lang.String,java.lang.String)
-to {POST /user/register.do}: There is already 'userController' bean method
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.register(com.tsien.mall.model.UserDO) mapped.
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:na]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	... 21 common frames omitted
-
-2019-06-26 23:16:12.743  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:16:12.743 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:16:12.743  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:16:13.292  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:16:13.292  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:16:13.293  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:16:13.421  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:16:13.422  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 676 ms
-2019-06-26 23:16:13.463  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:16:13.561  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-24,druidDatasource} inited
-2019-06-26 23:16:13.743  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:16:13.758  WARN 14672 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.checkValid(java.lang.String,java.lang.String)
-to {POST /user/register.do}: There is already 'userController' bean method
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.register(com.tsien.mall.model.UserDO) mapped.
-2019-06-26 23:16:13.758  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:16:13.759  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-24} closed
-2019-06-26 23:16:13.760  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-06-26 23:16:13.767  INFO 14672 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-06-26 23:16:13.769 ERROR 14672 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.checkValid(java.lang.String,java.lang.String)
-to {POST /user/register.do}: There is already 'userController' bean method
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.register(com.tsien.mall.model.UserDO) mapped.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at com.tsien.mall.Application.main(Application.java:20) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.checkValid(java.lang.String,java.lang.String)
-to {POST /user/register.do}: There is already 'userController' bean method
-public com.tsien.mall.util.ServerResponse<java.lang.String> com.tsien.mall.controller.protal.UserController.register(com.tsien.mall.model.UserDO) mapped.
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:na]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164) ~[spring-webmvc-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	... 21 common frames omitted
-
-2019-06-26 23:18:02.865  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:18:02.865 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:18:02.865  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:18:02.893  WARN 14672 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.tsien.mall.Application]; nested exception is java.io.FileNotFoundException: class path resource [com/tsien/mall/service/UserService.class] cannot be opened because it does not exist
-2019-06-26 23:18:02.900 ERROR 14672 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.tsien.mall.Application]; nested exception is java.io.FileNotFoundException: class path resource [com/tsien/mall/service/UserService.class] cannot be opened because it does not exist
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at com.tsien.mall.Application.main(Application.java:20) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-Caused by: java.io.FileNotFoundException: class path resource [com/tsien/mall/service/UserService.class] cannot be opened because it does not exist
-	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180) ~[spring-core-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51) ~[spring-core-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73) ~[spring-boot-2.1.6.RELEASE.jar:2.1.6.RELEASE]
-	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:682) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1008) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:375) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:323) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:191) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-5.1.8.RELEASE.jar:5.1.8.RELEASE]
-	... 18 common frames omitted
-
-2019-06-26 23:18:05.389  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:18:05.389 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:18:05.390  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:18:05.833  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:18:05.834  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:18:05.835  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:18:05.915  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:18:05.915  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 522 ms
-2019-06-26 23:18:05.950  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:18:06.037  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-25,druidDatasource} inited
-2019-06-26 23:18:06.238  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:18:06.291  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:18:06.336  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:18:06.383  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:18:06.384  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.028 seconds (JVM running for 4642.621)
-2019-06-26 23:18:06.387  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2019-06-26 23:18:41.555  INFO 14672 --- [Thread-132] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:18:41.555  INFO 14672 --- [Thread-132] com.alibaba.druid.pool.DruidDataSource   : {dataSource-25} closed
-2019-06-26 23:18:44.101  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 14672 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
-2019-06-26 23:18:44.102 DEBUG 14672 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2019-06-26 23:18:44.102  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
-2019-06-26 23:18:44.658  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-06-26 23:18:44.660  INFO 14672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-06-26 23:18:44.661  INFO 14672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-06-26 23:18:44.781  INFO 14672 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-06-26 23:18:44.782  INFO 14672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 677 ms
-2019-06-26 23:18:44.849  INFO 14672 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2019-06-26 23:18:44.958  INFO 14672 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-26,druidDatasource} inited
-2019-06-26 23:18:45.161  INFO 14672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-06-26 23:18:45.223  INFO 14672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-06-26 23:18:45.317  INFO 14672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-06-26 23:18:45.384  INFO 14672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-06-26 23:18:45.386  INFO 14672 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.325 seconds (JVM running for 4681.623)
-2019-06-26 23:18:45.389  INFO 14672 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-06-28 00:31:01.695  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 24104 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
+2019-06-28 00:31:01.706 DEBUG 24104 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 00:31:01.708  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
+2019-06-28 00:31:01.802  INFO 24104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-28 00:31:01.803  INFO 24104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-28 00:31:04.182  INFO 24104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-28 00:31:04.259  INFO 24104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-28 00:31:04.260  INFO 24104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 00:31:04.495  INFO 24104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-28 00:31:04.496  INFO 24104 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2692 ms
+2019-06-28 00:31:04.628  INFO 24104 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-06-28 00:31:04.931  INFO 24104 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-06-28 00:31:05.579  INFO 24104 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-28 00:31:05.809  INFO 24104 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-28 00:31:06.043  INFO 24104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-28 00:31:06.179  INFO 24104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-28 00:31:06.188  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : Started Application in 5.045 seconds (JVM running for 12.895)
+2019-06-28 00:33:07.432  INFO 24104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 00:33:07.433  INFO 24104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-28 00:33:07.442  INFO 24104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-06-28 00:33:07.460  WARN 24104 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-06-28 00:33:35.195  INFO 24104 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-28 00:33:35.203  INFO 24104 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-06-28 00:33:40.891  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 24104 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
+2019-06-28 00:33:40.892 DEBUG 24104 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 00:33:40.892  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
+2019-06-28 00:33:41.461  INFO 24104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-28 00:33:41.463  INFO 24104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-28 00:33:41.464  INFO 24104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 00:33:41.682  INFO 24104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-28 00:33:41.682  INFO 24104 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 786 ms
+2019-06-28 00:33:41.761  INFO 24104 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-06-28 00:33:41.857  INFO 24104 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2,druidDatasource} inited
+2019-06-28 00:33:42.134  INFO 24104 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-28 00:33:42.219  INFO 24104 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-28 00:33:42.294  INFO 24104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-28 00:33:42.361  INFO 24104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-28 00:33:42.362  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.521 seconds (JVM running for 169.07)
+2019-06-28 00:33:42.365  INFO 24104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-06-28 00:33:51.839  INFO 24104 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-28 00:33:51.842  INFO 24104 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2019-06-28 00:33:56.736  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 24104 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
+2019-06-28 00:33:56.737 DEBUG 24104 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 00:33:56.737  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
+2019-06-28 00:33:57.120  INFO 24104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-28 00:33:57.122  INFO 24104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-28 00:33:57.122  INFO 24104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 00:33:57.209  INFO 24104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-28 00:33:57.209  INFO 24104 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 465 ms
+2019-06-28 00:33:57.240  INFO 24104 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-06-28 00:33:57.322  INFO 24104 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3,druidDatasource} inited
+2019-06-28 00:33:57.475  INFO 24104 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-28 00:33:57.508  INFO 24104 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-28 00:33:57.552  INFO 24104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-28 00:33:57.583  INFO 24104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-28 00:33:57.583  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : Started Application in 0.896 seconds (JVM running for 184.29)
+2019-06-28 00:33:57.585  INFO 24104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-06-28 00:34:00.108  INFO 24104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 00:34:00.109  INFO 24104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-28 00:34:00.114  INFO 24104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-06-28 00:34:00.118  WARN 24104 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-06-28 00:34:29.332  INFO 24104 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-28 00:34:29.334  INFO 24104 --- [Thread-15] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2019-06-28 00:34:33.368  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 24104 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
+2019-06-28 00:34:33.368 DEBUG 24104 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-28 00:34:33.369  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
+2019-06-28 00:34:33.743  INFO 24104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-28 00:34:33.744  INFO 24104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-28 00:34:33.745  INFO 24104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-28 00:34:33.832  INFO 24104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-28 00:34:33.832  INFO 24104 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 461 ms
+2019-06-28 00:34:33.870  INFO 24104 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-06-28 00:34:33.924  INFO 24104 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4,druidDatasource} inited
+2019-06-28 00:34:34.086  INFO 24104 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-28 00:34:34.150  INFO 24104 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-28 00:34:34.204  INFO 24104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-28 00:34:34.251  INFO 24104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-28 00:34:34.252  INFO 24104 --- [restartedMain] com.tsien.mall.Application               : Started Application in 0.918 seconds (JVM running for 220.959)
+2019-06-28 00:34:34.254  INFO 24104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-06-28 00:34:40.433  INFO 24104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-28 00:34:40.434  INFO 24104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-28 00:34:40.438  INFO 24104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-06-28 00:34:41.708 DEBUG 24104 --- [http-nio-8080-exec-1] c.t.m.d.UserMapper.countUsersByUsername  : ==>  Preparing: select count(1) from mall_user where username = ? 
+2019-06-28 00:34:41.728 DEBUG 24104 --- [http-nio-8080-exec-1] c.t.m.d.UserMapper.countUsersByUsername  : ==> Parameters: tsien16(String)
+2019-06-28 00:34:42.066 DEBUG 24104 --- [http-nio-8080-exec-1] c.t.m.d.UserMapper.countUsersByUsername  : <==      Total: 1
+2019-06-28 00:34:42.070 DEBUG 24104 --- [http-nio-8080-exec-1] c.t.m.dao.UserMapper.countUsersByEmail   : ==>  Preparing: select count(1) from mall_user where email = ? 
+2019-06-28 00:34:42.070 DEBUG 24104 --- [http-nio-8080-exec-1] c.t.m.dao.UserMapper.countUsersByEmail   : ==> Parameters: tsien16@qq.com(String)
+2019-06-28 00:34:42.132 DEBUG 24104 --- [http-nio-8080-exec-1] c.t.m.dao.UserMapper.countUsersByEmail   : <==      Total: 1

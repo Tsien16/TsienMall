@@ -5,7 +5,7 @@ import com.tsien.mall.constant.RoleEnum;
 import com.tsien.mall.model.UserDO;
 import com.tsien.mall.service.UserService;
 import com.tsien.mall.util.ServerResponse;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,7 +35,7 @@ public class UserManageController {
      * @param password password
      * @return response
      */
-    @GetMapping("login.do")
+    @PostMapping("login.do")
     public ServerResponse<UserDO> login(HttpSession session, String username, String password) {
 
         ServerResponse<UserDO> response = userService.login(username, password);
