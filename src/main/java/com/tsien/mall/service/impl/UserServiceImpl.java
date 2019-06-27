@@ -1,5 +1,6 @@
 package com.tsien.mall.service.impl;
 
+import com.tsien.mall.constant.Const;
 import com.tsien.mall.constant.RoleEnum;
 import com.tsien.mall.dao.UserMapper;
 import com.tsien.mall.model.UserDO;
@@ -25,6 +26,13 @@ public class UserServiceImpl implements UserService {
     @Resource
     private UserMapper userMapper;
 
+    /**
+     * 用户登录
+     *
+     * @param username username username
+     * @param password password password
+     * @return 登陆结果
+     */
     @Override
     public ServerResponse<UserDO> login(String username, String password) {
 
@@ -55,14 +63,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public ServerResponse<String> register(UserDO userDO) {
 
-        int resultCount = userMapper.countUsersByUsername(userDO.getUsername());
-        if (resultCount > 0) {
-            return ServerResponse.createByErrorMessage("用户名已存在");
+        // 复用checkValid方法
+        ServerResponse<String> validResponse = this.checkValid(userDO.getUsername(), Const.USERNAME);
+        if (!validResponse.isSuccess()) {
+            return validResponse;
         }
 
-        resultCount = userMapper.countUsersByEmail(userDO.getEmail());
-        if (resultCount > 0) {
-            return ServerResponse.createByErrorMessage("邮箱已存在");
+        validResponse = this.checkValid(userDO.getEmail(), Const.EMAIL);
+        if (!validResponse.isSuccess()) {
+            return validResponse;
         }
 
         // 设置角色为普通用户
@@ -70,11 +79,44 @@ public class UserServiceImpl implements UserService {
 
         //密码MD5加密
         userDO.setPassword(MD5Util.md5EncodeUtf8(userDO.getPassword()));
-        resultCount = userMapper.insert(userDO);
+
+        int resultCount = userMapper.insert(userDO);
         if (resultCount == 0) {
             return ServerResponse.createByErrorMessage("注册失败");
         }
         return ServerResponse.createBySuccessMessage("注册成功");
 
     }
+
+    /**
+     * 校验注册时候用户名或者密码的合法性
+     *
+     * @param string 字符串
+     * @param type   email/username
+     * @return 校验结果
+     */
+    @Override
+    public ServerResponse<String> checkValid(String string, String type) {
+        if (StringUtils.isNotBlank(type)) {
+            // 开始校验
+            if (Const.USERNAME.equals(type)) {
+                int resultCount = userMapper.countUsersByUsername(string);
+                if (resultCount > 0) {
+                    return ServerResponse.createByErrorMessage("用户名已存在");
+                }
+            }
+
+            if (Const.EMAIL.equals(type)) {
+                int resultCount = userMapper.countUsersByEmail(string);
+                if (resultCount > 0) {
+                    return ServerResponse.createByErrorMessage("邮箱已存在");
+                }
+            }
+        } else {
+            return ServerResponse.createByErrorMessage("参数错误");
+        }
+
+        return ServerResponse.createBySuccessMessage("校验成功");
+    }
+
 }

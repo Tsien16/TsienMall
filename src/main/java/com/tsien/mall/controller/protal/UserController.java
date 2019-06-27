@@ -46,7 +46,7 @@ public class UserController {
     }
 
     /**
-     * 退出登陆接口，原理：从session里移除用户数据
+     * 退出登陆，原理：从session里移除用户数据
      *
      * @param session session
      * @return 删除成功的信息
@@ -66,6 +66,18 @@ public class UserController {
     @PostMapping("register.do")
     public ServerResponse<String> register(UserDO userDO) {
         return userService.register(userDO);
+    }
+
+    /**
+     * 检查用户名或者邮箱的合法性
+     *
+     * @param string string
+     * @param type   email/username
+     * @return 检查结果
+     */
+    @PostMapping("check_valid.do")
+    public ServerResponse<String> checkValid(String string, String type) {
+        return userService.checkValid(string, type);
     }
 
 

@@ -29,4 +29,15 @@ public interface UserService {
      * @return 注册结果
      */
     ServerResponse<String> register(UserDO userDO);
+
+    /**
+     * 校验注册时候用户名或者密码的合法性
+     *
+     * @param string 字符串
+     * @param type   email/username
+     * @return 校验结果
+     */
+    ServerResponse<String> checkValid(String string, String type);
+
+
 }
