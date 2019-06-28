@@ -99,6 +99,12 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public ServerResponse<String> checkValid(String string, String type) {
+
+        // 要对用户名/邮箱进行空判断，否则下面业务代会导致，string为空，也验证通过
+        if (StringUtils.isBlank(string)) {
+            return ServerResponse.createByErrorMessage("用户名或者邮箱为空");
+        }
+
         if (StringUtils.isNotBlank(type)) {
             // 开始校验
             if (Const.USERNAME.equals(type)) {

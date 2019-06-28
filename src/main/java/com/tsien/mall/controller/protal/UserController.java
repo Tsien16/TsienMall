@@ -80,12 +80,12 @@ public class UserController {
     }
 
     /**
-     * 获取用户信息
+     * 获取用户信息，未登录不强制登陆
      *
      * @param session session
      * @return 用户信息
      */
-    @PostMapping("get_user_info.do")
+    @PostMapping("get_userInfo.do")
     public ServerResponse<UserDO> getUserInfo(HttpSession session) {
         UserDO userDO = (UserDO) session.getAttribute(Const.CURRENT_USER);
         if (userDO != null) {
@@ -156,13 +156,13 @@ public class UserController {
     }
 
     /**
-     * 获取用户信息
+     * 获取用户信息，如果未登陆强制登陆
      *
      * @param session session
      * @return 用户信息
      */
-    @PostMapping("get_userInfo.do")
-    public ServerResponse<UserDO> getUserInformation(HttpSession session) {
+    @PostMapping("get_userInfo_of_need_login.do")
+    public ServerResponse<UserDO> getUserInfoOfNeedLogin(HttpSession session) {
 
         // 判断用户登陆状态
         UserDO userDO = (UserDO) session.getAttribute(Const.CURRENT_USER);
