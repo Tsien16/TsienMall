@@ -13,6 +13,7 @@
         <result column="role" jdbcType="INTEGER" property="role"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
         <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+
     </resultMap>
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
