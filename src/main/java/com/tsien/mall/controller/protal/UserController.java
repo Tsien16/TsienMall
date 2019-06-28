@@ -34,7 +34,9 @@ public class UserController {
      * @return response
      */
     @PostMapping("login.do")
-    public ServerResponse<UserDO> login(HttpSession session, String username, String password) {
+    public ServerResponse<UserDO> login(HttpSession session,
+                                        @RequestParam("username") String username,
+                                        @RequestParam("password") String password) {
 
         ServerResponse<UserDO> response = userService.login(username, password);
         if (response.isSuccess()) {
@@ -75,7 +77,8 @@ public class UserController {
      * @return 检查结果
      */
     @PostMapping("check_valid.do")
-    public ServerResponse<String> checkValid(String string, String type) {
+    public ServerResponse<String> checkValid(@RequestParam("string") String string,
+                                             @RequestParam("type") String type) {
         return userService.checkValid(string, type);
     }
 
@@ -102,7 +105,7 @@ public class UserController {
      * @return 忘记密码提示问题
      */
     @PostMapping("get_forget_password_prompts.do")
-    public ServerResponse<String> getForgetPasswordPrompts(String username) {
+    public ServerResponse<String> getForgetPasswordPrompts(@RequestParam("username") String username) {
         return userService.getQuestion(username);
     }
 
@@ -115,7 +118,9 @@ public class UserController {
      * @return 验证结果
      */
     @PostMapping("check_answer.do")
-    public ServerResponse<String> checkAnswer(String username, String question, String answer) {
+    public ServerResponse<String> checkAnswer(@RequestParam("username") String username,
+                                              @RequestParam("question") String question,
+                                              @RequestParam("answer") String answer) {
         return userService.checkAnswer(username, question, answer);
 
     }
@@ -129,7 +134,9 @@ public class UserController {
      * @return 修改密码的结果
      */
     @PostMapping("forget_reset_password.do")
-    public ServerResponse<String> forgetResetPassword(String username, String newPassword, String forgetToken) {
+    public ServerResponse<String> forgetResetPassword(@RequestParam("username") String username,
+                                                      @RequestParam("newPassword") String newPassword,
+                                                      @RequestParam("forgetToken") String forgetToken) {
         return userService.forgetResetPassword(username, newPassword, forgetToken);
 
     }
@@ -143,7 +150,9 @@ public class UserController {
      * @return 重置的结果
      */
     @PostMapping("reset_password.do")
-    public ServerResponse<String> resetPassword(HttpSession session, String oldPassword, String newPassword) {
+    public ServerResponse<String> resetPassword(HttpSession session,
+                                                @RequestParam("oldPassword") String oldPassword,
+                                                @RequestParam("newPassword") String newPassword) {
 
         // 判断用户登陆状态
         UserDO userDO = (UserDO) session.getAttribute(Const.CURRENT_USER);

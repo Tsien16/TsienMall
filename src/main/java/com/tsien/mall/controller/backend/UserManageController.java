@@ -7,6 +7,7 @@ import com.tsien.mall.service.UserService;
 import com.tsien.mall.util.ServerResponse;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -36,7 +37,9 @@ public class UserManageController {
      * @return response
      */
     @PostMapping("login.do")
-    public ServerResponse<UserDO> login(HttpSession session, String username, String password) {
+    public ServerResponse<UserDO> login(HttpSession session,
+                                        @RequestParam("username") String username,
+                                        @RequestParam("password") String password) {
 
         ServerResponse<UserDO> response = userService.login(username, password);
         if (response.isSuccess()) {
