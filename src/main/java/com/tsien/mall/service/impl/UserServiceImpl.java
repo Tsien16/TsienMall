@@ -297,4 +297,21 @@ public class UserServiceImpl implements UserService {
 
     }
 
+    // backend
+
+    /**
+     * 校验用户是否是管理员
+     *
+     * @param userDO userDO
+     * @return 校验结果
+     */
+    @Override
+    public ServerResponse checkUserRoleOfAdmin(UserDO userDO) {
+
+        if (userDO != null && userDO.getRole() == RoleEnum.ROLE_ADMIN.getCode()) {
+            return ServerResponse.createBySuccess();
+        }
+        return ServerResponse.createByError();
+    }
+
 }

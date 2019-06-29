@@ -93,5 +93,13 @@ public interface UserService {
      */
     ServerResponse<UserDO> updateUserInfo(UserDO userDO);
 
+    /**
+     * 校验用户是否是管理员
+     *
+     * @param userDO userDO
+     * @return 校验结果
+     */
+    ServerResponse checkUserRoleOfAdmin(UserDO userDO);
+
 
 }

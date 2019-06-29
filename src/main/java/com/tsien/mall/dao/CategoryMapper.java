@@ -2,6 +2,8 @@ package com.tsien.mall.dao;
 
 import com.tsien.mall.model.CategoryDO;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -59,4 +61,12 @@ public interface CategoryMapper {
      * @return 更新的数量
      */
     int updateByPrimaryKey(CategoryDO record);
+
+    /**
+     * 根据parentId查询商品分类
+     *
+     * @param parentId parentId
+     * @return 子分类
+     */
+    List<CategoryDO> listChildrenCategoriesByParentId(Integer parentId);
 }
