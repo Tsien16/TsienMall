@@ -125,4 +125,11 @@
         where id = #{id,jdbcType=INTEGER}
     </update>
 
+    <select id="listChildrenCategoriesByParentId" parameterType="int" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_category
+        where parent_id = #{parentId}
+    </select>
+
 </mapper>

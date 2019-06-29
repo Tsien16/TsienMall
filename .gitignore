@@ -5,7 +5,11 @@ target/
 !**/src/test/**
 logs/
 .mvn
+<<<<<<< HEAD
 ,gz
+=======
+.gz
+>>>>>>> category-manage
 .log
 
 ### STS ###
