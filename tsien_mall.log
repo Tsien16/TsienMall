@@ -938,3 +938,225 @@
 2019-06-29 17:57:50.084 DEBUG 4880 --- [http-nio-8080-exec-3] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
 2019-06-29 17:57:50.086 DEBUG 4880 --- [http-nio-8080-exec-3] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100034(Integer)
 2019-06-29 17:57:50.120 DEBUG 4880 --- [http-nio-8080-exec-3] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:10:39.522  INFO 9760 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 9760 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
+2019-06-29 18:10:39.526 DEBUG 9760 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-06-29 18:10:39.528  INFO 9760 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
+2019-06-29 18:10:39.605  INFO 9760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-29 18:10:39.605  INFO 9760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-29 18:10:42.228  INFO 9760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-29 18:10:42.304  INFO 9760 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-29 18:10:42.305  INFO 9760 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-06-29 18:10:42.672  INFO 9760 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-29 18:10:42.673  INFO 9760 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3068 ms
+2019-06-29 18:10:42.978  INFO 9760 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-06-29 18:10:43.240  INFO 9760 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-06-29 18:10:44.051  INFO 9760 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-29 18:10:44.339  INFO 9760 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-29 18:10:44.594  INFO 9760 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-29 18:10:44.751  INFO 9760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-29 18:10:44.761  INFO 9760 --- [restartedMain] com.tsien.mall.Application               : Started Application in 5.91 seconds (JVM running for 14.728)
+2019-06-29 18:10:50.561  INFO 9760 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-29 18:10:50.563  INFO 9760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-29 18:10:50.578  INFO 9760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-06-29 18:10:55.520  WARN 9760 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [4,875] milliseconds.
+2019-06-29 18:10:56.106 DEBUG 9760 --- [http-nio-8080-exec-1] c.t.m.d.UserMapper.countUsersByUsername  : ==>  Preparing: select count(1) from mall_user where username = ? 
+2019-06-29 18:10:56.215 DEBUG 9760 --- [http-nio-8080-exec-1] c.t.m.d.UserMapper.countUsersByUsername  : ==> Parameters: admin(String)
+2019-06-29 18:10:56.303 DEBUG 9760 --- [http-nio-8080-exec-1] c.t.m.d.UserMapper.countUsersByUsername  : <==      Total: 1
+2019-06-29 18:10:56.326 DEBUG 9760 --- [http-nio-8080-exec-1] c.t.m.d.U.getUserByUsernameAndPassword   : ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mall_user where username=? and password=? 
+2019-06-29 18:10:56.329 DEBUG 9760 --- [http-nio-8080-exec-1] c.t.m.d.U.getUserByUsernameAndPassword   : ==> Parameters: admin(String), F0D5C806B5368358C1F0E41166B71F58(String)
+2019-06-29 18:10:56.371 DEBUG 9760 --- [http-nio-8080-exec-1] c.t.m.d.U.getUserByUsernameAndPassword   : <==      Total: 1
+2019-06-29 18:11:09.341 DEBUG 9760 --- [http-nio-8080-exec-3] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:09.343 DEBUG 9760 --- [http-nio-8080-exec-3] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100001(Integer)
+2019-06-29 18:11:09.382 DEBUG 9760 --- [http-nio-8080-exec-3] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 5
+2019-06-29 18:11:14.098 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.099 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 0(Integer)
+2019-06-29 18:11:14.139 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 0
+2019-06-29 18:11:14.143 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.147 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 0(Integer)
+2019-06-29 18:11:14.204 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 6
+2019-06-29 18:11:14.208 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.210 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100001(Integer)
+2019-06-29 18:11:14.250 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:14.255 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.257 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100001(Integer)
+2019-06-29 18:11:14.306 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 5
+2019-06-29 18:11:14.309 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.311 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100006(Integer)
+2019-06-29 18:11:14.351 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:14.353 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.356 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100006(Integer)
+2019-06-29 18:11:14.394 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:14.399 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.400 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100007(Integer)
+2019-06-29 18:11:14.439 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:14.442 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.444 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100007(Integer)
+2019-06-29 18:11:14.481 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:14.484 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.486 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100008(Integer)
+2019-06-29 18:11:14.529 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:14.532 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.535 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100008(Integer)
+2019-06-29 18:11:14.573 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:14.575 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.576 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100009(Integer)
+2019-06-29 18:11:14.612 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:14.614 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.615 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100009(Integer)
+2019-06-29 18:11:14.652 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:14.656 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.657 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100010(Integer)
+2019-06-29 18:11:14.695 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:14.700 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.700 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100010(Integer)
+2019-06-29 18:11:14.735 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:14.738 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.740 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100002(Integer)
+2019-06-29 18:11:14.779 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:14.780 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.782 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100002(Integer)
+2019-06-29 18:11:14.820 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 5
+2019-06-29 18:11:14.822 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.823 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100011(Integer)
+2019-06-29 18:11:14.860 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:14.862 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.862 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100011(Integer)
+2019-06-29 18:11:14.897 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:14.898 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.899 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100012(Integer)
+2019-06-29 18:11:14.936 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:14.938 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:14.939 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100012(Integer)
+2019-06-29 18:11:14.974 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:14.975 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:14.976 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100013(Integer)
+2019-06-29 18:11:15.011 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.012 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.013 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100013(Integer)
+2019-06-29 18:11:15.047 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.049 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.050 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100014(Integer)
+2019-06-29 18:11:15.085 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.087 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.088 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100014(Integer)
+2019-06-29 18:11:15.122 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.124 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.125 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100015(Integer)
+2019-06-29 18:11:15.160 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.163 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.163 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100015(Integer)
+2019-06-29 18:11:15.198 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.200 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.201 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100003(Integer)
+2019-06-29 18:11:15.239 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.241 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.242 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100003(Integer)
+2019-06-29 18:11:15.284 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 5
+2019-06-29 18:11:15.288 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.290 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100016(Integer)
+2019-06-29 18:11:15.329 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.332 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.333 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100016(Integer)
+2019-06-29 18:11:15.369 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.373 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.374 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100017(Integer)
+2019-06-29 18:11:15.414 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.418 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.420 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100017(Integer)
+2019-06-29 18:11:15.458 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.461 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.463 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100018(Integer)
+2019-06-29 18:11:15.502 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.507 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.508 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100018(Integer)
+2019-06-29 18:11:15.549 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.553 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.555 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100019(Integer)
+2019-06-29 18:11:15.592 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.594 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.595 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100019(Integer)
+2019-06-29 18:11:15.635 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.637 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.638 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100020(Integer)
+2019-06-29 18:11:15.675 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.677 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.677 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100020(Integer)
+2019-06-29 18:11:15.712 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.715 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.716 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100004(Integer)
+2019-06-29 18:11:15.753 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.756 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.758 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100004(Integer)
+2019-06-29 18:11:15.798 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 5
+2019-06-29 18:11:15.800 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.801 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100021(Integer)
+2019-06-29 18:11:15.840 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.842 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.843 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100021(Integer)
+2019-06-29 18:11:15.880 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.882 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.883 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100022(Integer)
+2019-06-29 18:11:15.921 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:15.923 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:15.925 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100022(Integer)
+2019-06-29 18:11:15.961 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:15.963 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:15.964 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100023(Integer)
+2019-06-29 18:11:16.001 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.003 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.005 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100023(Integer)
+2019-06-29 18:11:16.042 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:16.044 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:16.045 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100024(Integer)
+2019-06-29 18:11:16.088 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.091 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.092 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100024(Integer)
+2019-06-29 18:11:16.129 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:16.131 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:16.133 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100025(Integer)
+2019-06-29 18:11:16.173 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.176 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.177 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100025(Integer)
+2019-06-29 18:11:16.213 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:16.214 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:16.215 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100005(Integer)
+2019-06-29 18:11:16.251 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.253 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.254 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100005(Integer)
+2019-06-29 18:11:16.292 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 5
+2019-06-29 18:11:16.293 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:16.294 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100026(Integer)
+2019-06-29 18:11:16.330 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.331 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.332 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100026(Integer)
+2019-06-29 18:11:16.366 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:16.368 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:16.369 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100027(Integer)
+2019-06-29 18:11:16.406 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.407 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.407 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100027(Integer)
+2019-06-29 18:11:16.443 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:16.445 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:16.446 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100028(Integer)
+2019-06-29 18:11:16.485 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.487 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.489 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100028(Integer)
+2019-06-29 18:11:16.526 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:16.528 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:16.530 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100029(Integer)
+2019-06-29 18:11:16.568 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.570 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.572 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100029(Integer)
+2019-06-29 18:11:16.608 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:16.610 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:16.612 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100030(Integer)
+2019-06-29 18:11:16.649 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.653 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.654 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100030(Integer)
+2019-06-29 18:11:16.690 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
+2019-06-29 18:11:16.692 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where id = ? 
+2019-06-29 18:11:16.693 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : ==> Parameters: 100034(Integer)
+2019-06-29 18:11:16.731 DEBUG 9760 --- [http-nio-8080-exec-5] c.t.m.d.CategoryMapper.getByPrimaryKey   : <==      Total: 1
+2019-06-29 18:11:16.733 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mall_category where parent_id = ? 
+2019-06-29 18:11:16.735 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : ==> Parameters: 100034(Integer)
+2019-06-29 18:11:16.773 DEBUG 9760 --- [http-nio-8080-exec-5] t.m.d.C.listChildrenCategoriesByParentId : <==      Total: 0
