@@ -105,7 +105,6 @@ public interface UserMapper {
     int countUsersByUsernameAndQuestionAndAnswer(@Param("username") String username, @Param("question") String question,
                                                  @Param("answer") String answer);
 
-
     /**
      * 通过用户名更新密码
      *

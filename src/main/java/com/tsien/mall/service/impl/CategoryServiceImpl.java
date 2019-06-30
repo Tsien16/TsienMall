@@ -112,7 +112,7 @@ public class CategoryServiceImpl implements CategoryService {
      * @return 子节点
      */
     @Override
-    public ServerResponse listDeepChildrenCategoryIds(Integer categoryId) {
+    public ServerResponse<List<Integer>> listDeepChildrenCategoryIds(Integer categoryId) {
 
         Set<CategoryDO> categorySet = Sets.newHashSet();
         this.listChildrenCategories(categorySet, categoryId);

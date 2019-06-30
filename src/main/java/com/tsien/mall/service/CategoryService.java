@@ -47,6 +47,6 @@ public interface CategoryService {
      * @param categoryId categoryId
      * @return 所有的子节点
      */
-    ServerResponse listDeepChildrenCategoryIds(Integer categoryId);
+    ServerResponse<List<Integer>> listDeepChildrenCategoryIds(Integer categoryId);
 
 }

@@ -1,5 +1,9 @@
 package com.tsien.mall.constant;
 
+import com.google.common.collect.Sets;
+
+import java.util.Set;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -17,5 +21,7 @@ public class Const {
     public static final String USERNAME = "username";
 
     public static final String NULL = "null";
+
+    public static final Set<String> PRICE_ASC_DESC = Sets.newHashSet("price_desc", "price_asc");
 
 }

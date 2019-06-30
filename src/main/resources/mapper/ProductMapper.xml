@@ -189,4 +189,35 @@
         from mall_product order by id
     </select>
 
+    <select id="listProductsByProductNameAndProductId" parameterType="map" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_product
+        <where>
+            <if test="productName != null">
+                and name like #{productName}
+            </if>
+            <if test="productId != null">
+                and id = #{productId}
+            </if>
+        </where>
+    </select>
+
+    <select id="listProductsByProductNameAndCategoryIds" parameterType="map" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_product
+        where status=1
+        <if test="productName != null">
+            and name like #{productName}
+        </if>
+        <if test="categoryIdList != null">
+            and category_id in
+            <foreach collection="categoryIdList" item="item" index="index" open="(" separator="," close=")">
+                #{item}
+            </foreach>
+        </if>
+
+    </select>
+
 </mapper>

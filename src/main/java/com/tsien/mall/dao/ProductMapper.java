@@ -1,6 +1,7 @@
 package com.tsien.mall.dao;
 
 import com.tsien.mall.model.ProductDO;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -68,4 +69,25 @@ public interface ProductMapper {
      * @return productList
      */
     List<ProductDO> listProducts();
+
+    /**
+     * 根据名称和ID查询商品
+     *
+     * @param productName productName
+     * @param productId   productId
+     * @return productList
+     */
+    List<ProductDO> listProductsByProductNameAndProductId(@Param("productName") String productName,
+                                                          @Param("productId") Integer productId);
+
+    /**
+     * 根据商品名称或者分类查询
+     *
+     * @param productName    productName
+     * @param categoryIdList categoryIdList
+     * @return productList
+     */
+    List<ProductDO> listProductsByProductNameAndCategoryIds(@Param("productName") String productName,
+                                                            @Param("categoryIdList") List<Integer> categoryIdList);
+
 }

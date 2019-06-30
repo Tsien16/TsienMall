@@ -49,4 +49,36 @@ public interface ProductService {
      */
     ServerResponse<PageInfo> listProducts(int pageNum, int pageSize);
 
+    /**
+     * 搜索商品
+     *
+     * @param productName productName
+     * @param productId   productId
+     * @param pageNum     pageNum
+     * @param pageSize    pageSize
+     * @return pageInfo
+     */
+    ServerResponse<PageInfo> searchProduct(String productName, Integer productId, int pageNum, int pageSize);
+
+    /**
+     * 获取商品详情
+     *
+     * @param productId productId
+     * @return 商品详情
+     */
+    ServerResponse<ProductDetailVO> getProductDetail(Integer productId);
+
+    /**
+     * 根据关键字搜索商品
+     *
+     * @param keyword    keyword
+     * @param categoryId categoryId
+     * @param pageNum    pageNum
+     * @param pageSize   pageSize
+     * @param orderBy    orderBy
+     * @return pageInfo
+     */
+    ServerResponse<PageInfo> listProductsByKeywordAndCategoryId(String keyword, Integer categoryId,
+                                                                int pageNum, int pageSize, String orderBy);
+
 }
