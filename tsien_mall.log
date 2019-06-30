@@ -2505,3 +2505,20 @@ Consider defining a bean of type 'com.tsien.mall.service.CategoryService' in you
 2019-07-01 02:19:01.137  INFO 34116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2019-07-01 02:19:01.138  INFO 34116 --- [restartedMain] com.tsien.mall.Application               : Started Application in 1.511 seconds (JVM running for 3829.564)
 2019-07-01 02:19:01.141  INFO 34116 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-07-01 02:19:46.936  INFO 9548 --- [restartedMain] com.tsien.mall.Application               : Starting Application on Tsien with PID 9548 (D:\Code\Java\TsienMall\target\classes started by tsien in D:\Code\Java\TsienMall)
+2019-07-01 02:19:46.945 DEBUG 9548 --- [restartedMain] com.tsien.mall.Application               : Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-07-01 02:19:46.954  INFO 9548 --- [restartedMain] com.tsien.mall.Application               : No active profile set, falling back to default profiles: default
+2019-07-01 02:19:47.040  INFO 9548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-01 02:19:47.040  INFO 9548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-01 02:19:48.909  INFO 9548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-01 02:19:48.940  INFO 9548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-01 02:19:48.941  INFO 9548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-01 02:19:49.185  INFO 9548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-01 02:19:49.185  INFO 9548 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2144 ms
+2019-07-01 02:19:49.397  INFO 9548 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-07-01 02:19:49.568  INFO 9548 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,druidDatasource} inited
+2019-07-01 02:19:50.103  INFO 9548 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-01 02:19:50.375  INFO 9548 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-01 02:19:50.687  INFO 9548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-01 02:19:50.813  INFO 9548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-01 02:19:50.822  INFO 9548 --- [restartedMain] com.tsien.mall.Application               : Started Application in 4.459 seconds (JVM running for 8.234)
