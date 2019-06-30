@@ -2,6 +2,8 @@ package com.tsien.mall.dao;
 
 import com.tsien.mall.model.ProductDO;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -59,4 +61,11 @@ public interface ProductMapper {
      * @return 更新的数量
      */
     int updateByPrimaryKey(ProductDO record);
+
+    /**
+     * 查询所有的商品
+     *
+     * @return productList
+     */
+    List<ProductDO> listProducts();
 }

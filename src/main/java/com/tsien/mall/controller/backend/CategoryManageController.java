@@ -119,6 +119,13 @@ public class CategoryManageController {
 
     }
 
+    /**
+     * 根据商品分类ID，查询子节点，递归
+     *
+     * @param session    session
+     * @param categoryId categoryId
+     * @return 所有的分类ID
+     */
     @GetMapping("deep_children_categoryIds.do")
     public ServerResponse getDeepChildrenCategoryIds(HttpSession session,
                                                      @RequestParam(value = "categoryId", defaultValue = "0") int categoryId) {

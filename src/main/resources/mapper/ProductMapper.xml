@@ -183,4 +183,10 @@
         where id = #{id,jdbcType=INTEGER}
     </update>
 
+    <select id="listProducts" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_product order by id
+    </select>
+
 </mapper>
