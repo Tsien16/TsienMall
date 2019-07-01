@@ -5,12 +5,8 @@ target/
 !**/src/test/**
 logs/
 .mvn
-<<<<<<< HEAD
-,gz
-=======
-.gz
->>>>>>> category-manage
-.log
+*.gz
+*.log
 
 ### STS ###
 .apt_generated
