@@ -24,4 +24,17 @@ public class Const {
 
     public static final Set<String> PRICE_ASC_DESC = Sets.newHashSet("price_desc", "price_asc");
 
+    public interface CartLimit {
+
+        /**
+         * 限制库存失败
+         */
+        String LIMIT_NUM_FAIL = "LIMIT_NUM_FAIL";
+
+        /**
+         * 限制库存成功
+         */
+        String LIMIT_NUM_SUCCESS = "LIMIT_NUM_SUCCESS";
+    }
+
 }

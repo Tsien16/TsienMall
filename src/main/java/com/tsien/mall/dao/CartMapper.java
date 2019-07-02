@@ -1,6 +1,9 @@
 package com.tsien.mall.dao;
 
 import com.tsien.mall.model.CartDO;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -59,4 +62,56 @@ public interface CartMapper {
      * @return 更新的数量
      */
     int updateByPrimaryKey(CartDO record);
+
+    /**
+     * 查询购物车
+     *
+     * @param userId    userId
+     * @param productId productId
+     * @return cartDO
+     */
+    CartDO getCartByUserIdAndProductId(@Param("userId") Integer userId, @Param("productId") Integer productId);
+
+    /**
+     * 根据用户查询购物车列表
+     *
+     * @param userId userId
+     * @return cartList
+     */
+    List<CartDO> listCartsByUserId(Integer userId);
+
+    /**
+     * 查询未勾选购物车的数量
+     *
+     * @param userId userId
+     * @return 未勾选购物车的数量
+     */
+    int countCartOfUnCheckedByUserId(Integer userId);
+
+    /**
+     * 根据产品ID删除购物车
+     *
+     * @param userId        userId
+     * @param productIdList productIdList
+     * @return 删除的行数
+     */
+    int deleteByProductIds(@Param("userId") Integer userId, @Param("productIdList") List<String> productIdList);
+
+    /**
+     * 更新购物车选择状态
+     *
+     * @param userId    userId
+     * @param productId productId
+     * @param checked   checked
+     * @return 影响的行数
+     */
+    int updateCartCheckedOrUnChecked(@Param("userId") Integer userId, @Param("productId") Integer productId, @Param("checked") Integer checked);
+
+    /**
+     * 统计购物车中的商品数量
+     *
+     * @param userId userId
+     * @return 商品数量
+     */
+    int countCartProducts(Integer userId);
 }
