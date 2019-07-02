@@ -120,7 +120,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ServerResponse<ProductDetailVO> getProductDetailOfManage(Integer productId) {
 
-        if (productId != null) {
+        if (productId == null) {
             return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.ILLEGAL_ARGUMENT.getCode(),
                     ResponseCodeEnum.ILLEGAL_ARGUMENT.getDesc());
         }
@@ -204,7 +204,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ServerResponse<ProductDetailVO> getProductDetail(Integer productId) {
 
-        if (productId != null) {
+        if (productId == null) {
             return ServerResponse.createByErrorCodeMessage(ResponseCodeEnum.ILLEGAL_ARGUMENT.getCode(),
                     ResponseCodeEnum.ILLEGAL_ARGUMENT.getDesc());
         }

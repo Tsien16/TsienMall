@@ -147,8 +147,8 @@ public class ProductManageController {
      */
     @GetMapping("search.do")
     public ServerResponse searchProduct(HttpSession session,
-                                        @RequestParam(value = "productName") String productName,
-                                        @RequestParam(value = "productId") Integer productId,
+                                        @RequestParam(value = "productName", required = false) String productName,
+                                        @RequestParam(value = "productId", required = false) Integer productId,
                                         @RequestParam(value = "pageNum", defaultValue = "1") int pageNum,
                                         @RequestParam(value = "pageSize", defaultValue = "10") int pageSize) {
 

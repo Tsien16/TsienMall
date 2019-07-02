@@ -92,7 +92,7 @@ public class UserController {
     public ServerResponse<UserDO> getUserInfo(HttpSession session) {
         UserDO userDO = (UserDO) session.getAttribute(Const.CURRENT_USER);
         if (userDO != null) {
-            ServerResponse.createBySuccess(userDO);
+            return ServerResponse.createBySuccess(userDO);
         }
 
         return ServerResponse.createByErrorMessage("用户未登录，无法获取当前的用户信息");
