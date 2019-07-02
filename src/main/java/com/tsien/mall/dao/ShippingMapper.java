@@ -1,6 +1,9 @@
 package com.tsien.mall.dao;
 
 import com.tsien.mall.model.ShippingDO;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -59,4 +62,38 @@ public interface ShippingMapper {
      * @return 更新的数量
      */
     int updateByPrimaryKey(ShippingDO record);
+
+    /**
+     * 根据用户ID和地址IP删除
+     *
+     * @param userId     userId
+     * @param shippingId shippingId
+     * @return 生效行数
+     */
+    int deleteByUserIdAndShippingId(@Param("userId") Integer userId, @Param("shippingId") Integer shippingId);
+
+    /**
+     * 更新收货地址
+     *
+     * @param record record
+     * @return 更新的结果
+     */
+    int updateByUserId(ShippingDO record);
+
+    /**
+     * 根据用户ID和地址IP查询
+     *
+     * @param userId     userId
+     * @param shippingId shippingId
+     * @return ShippingDO
+     */
+    ShippingDO getByUserIdAndShippingId(@Param("userId") Integer userId, @Param("shippingId") Integer shippingId);
+
+    /**
+     * 查询所有收货地址
+     *
+     * @param userId userId
+     * @return shippingList
+     */
+    List<ShippingDO> listShippings(Integer userId);
 }
