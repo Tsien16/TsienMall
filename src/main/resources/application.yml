@@ -35,7 +35,7 @@ pagehelper:
 logging:
   level:
     com.tsien.mall: debug
-  path: logs
+  path: logs/
   file: tsien_mall.log
 
 
