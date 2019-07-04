@@ -1,6 +1,9 @@
 package com.tsien.mall.dao;
 
 import com.tsien.mall.model.OrderItemDO;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -59,4 +62,20 @@ public interface OrderItemMapper {
      * @return 更新的数量
      */
     int updateByPrimaryKey(OrderItemDO record);
+
+    /**
+     * 批量插入
+     *
+     * @param orderItemList orderItemList
+     */
+    void insertBatch(@Param("orderItemList") List<OrderItemDO> orderItemList);
+
+    /**
+     * 查询子订单
+     *
+     * @param userId  userId
+     * @param orderNo orderNo
+     * @return orderItemList
+     */
+    List<OrderItemDO> listOrderItemsByUserIdAndOrderNo(@Param("userId") Integer userId, @Param("orderNo") Long orderNo);
 }

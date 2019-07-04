@@ -114,4 +114,12 @@ public interface CartMapper {
      * @return 商品数量
      */
     int countCartProducts(Integer userId);
+
+    /**
+     * 从购物车中查找已勾选的商品
+     *
+     * @param userId userId
+     * @return 已勾选的商品
+     */
+    List<CartDO> listCartsOfCheckedByUserId(Integer userId);
 }

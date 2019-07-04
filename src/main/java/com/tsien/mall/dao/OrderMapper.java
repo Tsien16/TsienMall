@@ -1,6 +1,9 @@
 package com.tsien.mall.dao;
 
 import com.tsien.mall.model.OrderDO;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -59,4 +62,21 @@ public interface OrderMapper {
      * @return 更新的数量
      */
     int updateByPrimaryKey(OrderDO record);
+
+    /**
+     * 查询订单
+     *
+     * @param userId  userId
+     * @param orderNo orderNo
+     * @return orderDo
+     */
+    OrderDO getOrderByUserIdAndOrderNo(@Param("userId") Integer userId, @Param("orderNo") Long orderNo);
+
+    /**
+     * 根据userId查询订单
+     *
+     * @param userId userId
+     * @return return
+     */
+    List<OrderDO> listOrdersByUserId(Integer userId);
 }
