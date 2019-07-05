@@ -79,4 +79,19 @@ public interface OrderMapper {
      * @return return
      */
     List<OrderDO> listOrdersByUserId(Integer userId);
+
+    /**
+     * 查询所有订单
+     *
+     * @return orderList
+     */
+    List<OrderDO> listOrders();
+
+    /**
+     * 根据订单号查询订单
+     *
+     * @param orderNo orderNo
+     * @return 订单
+     */
+    OrderDO getOrderByOrderNo(Long orderNo);
 }

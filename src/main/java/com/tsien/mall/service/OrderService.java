@@ -58,4 +58,39 @@ public interface OrderService {
      * @return orderVo
      */
     ServerResponse<OrderVO> getOrderDetail(Integer userId, Long orderNo);
+
+    /**
+     * 管理员查询所有订单
+     *
+     * @param pageNum  pageNum
+     * @param pageSize pageSize
+     * @return 订单列表
+     */
+    ServerResponse<PageInfo> listOfAdmin(int pageNum, int pageSize);
+
+    /**
+     * 查看订单详情
+     *
+     * @param orderNo orderNo
+     * @return 订单详情
+     */
+    ServerResponse<OrderVO> detail(Long orderNo);
+
+    /**
+     * 搜索订单
+     *
+     * @param orderNo  orderNo
+     * @param pageNum  pageNum
+     * @param pageSize pageSize
+     * @return 搜索结果
+     */
+    ServerResponse<PageInfo> search(Long orderNo, int pageNum, int pageSize);
+
+    /**
+     * 发货
+     *
+     * @param orderNo orderNo
+     * @return 发货结果
+     */
+    ServerResponse<String> sendGoods(Long orderNo);
 }

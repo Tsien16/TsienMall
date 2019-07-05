@@ -78,4 +78,12 @@ public interface OrderItemMapper {
      * @return orderItemList
      */
     List<OrderItemDO> listOrderItemsByUserIdAndOrderNo(@Param("userId") Integer userId, @Param("orderNo") Long orderNo);
+
+    /**
+     * 查询orderItem
+     *
+     * @param orderNo orderNo
+     * @return orderItemList
+     */
+    List<OrderItemDO> listOrderItemsByOrderNo(Long orderNo);
 }

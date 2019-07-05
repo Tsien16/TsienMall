@@ -223,4 +223,18 @@
         order by create_time desc
     </select>
 
+    <select id="listOrders" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_order
+        order by create_time desc
+    </select>
+
+    <select id="getOrderByOrderNo" parameterType="long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_order
+        where order_no=#{orderNo}
+    </select>
+
 </mapper>

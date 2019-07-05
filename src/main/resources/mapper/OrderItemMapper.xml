@@ -193,4 +193,11 @@
         and order_no=#{orderNo}
     </select>
 
+    <select id="listOrderItemsByOrderNo" parameterType="long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_order_item
+        where order_no=#{orderNo}
+    </select>
+
 </mapper>
