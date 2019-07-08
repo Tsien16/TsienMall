@@ -4,6 +4,8 @@ import com.github.pagehelper.PageInfo;
 import com.tsien.mall.util.ServerResponse;
 import com.tsien.mall.vo.OrderVO;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -93,4 +95,31 @@ public interface OrderService {
      * @return 发货结果
      */
     ServerResponse<String> sendGoods(Long orderNo);
+
+    /**
+     * 订单支付
+     *
+     * @param userId  userId
+     * @param orderNo orderNo
+     * @param path    path
+     * @return 支付结果
+     */
+    ServerResponse pay(Integer userId, Long orderNo, String path);
+
+    /**
+     * 支付宝回调
+     *
+     * @param params params
+     * @return 更新结果
+     */
+    ServerResponse alipayCallback(Map<String, String> params);
+
+    /**
+     * 查询订单支付状态
+     *
+     * @param userId  userId
+     * @param orderNo orderNo
+     * @return 支付状态
+     */
+    ServerResponse queryOrderPayStatus(Integer userId, Long orderNo);
 }

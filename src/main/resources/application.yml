@@ -35,8 +35,20 @@ pagehelper:
 logging:
   level:
     com.tsien.mall: debug
-  path: logs/
-  file: tsien_mall.log
+  path: ./logs
 
 
+management:
+  endpoint:
+    health:
+      show-details: always
 
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+info:
+  app-name: TsienMall
+  author: Tsien
+  email: tsien16@qq.com
