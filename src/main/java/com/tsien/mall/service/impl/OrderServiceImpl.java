@@ -699,7 +699,7 @@ public class OrderServiceImpl implements OrderService {
                     logger.error("上传二维码异常", e);
                 }
                 logger.info("qrPath:" + qrPath);
-                String qrUrl = PropertiesUtil.getProperty("ftp.server.http.prefix");
+                String qrUrl = PropertiesUtil.getProperty("ftp.server.http.prefix") + targetFile.getName();
                 resultMap.put("qrUrl", qrUrl);
                 return ServerResponse.createBySuccess(resultMap);
             case FAILED:
