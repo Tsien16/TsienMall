@@ -1,6 +1,29 @@
+# 通用配置
 server:
   port: 8080
 
+# 其它配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration: # 配置mybatis答应日志
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+logging:
+  level:
+    com.tsien.mall: debug
+  path: ./logs
+
+spring:
+  profiles:
+    active: prod
+
+---
 spring:
   datasource:
     druid:
@@ -20,23 +43,7 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
     encoding: UTF-8
-
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  configuration: # 配置mybatis答应日志
-    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
-
-pagehelper:
-  helper-dialect: mysql
-  reasonable: true
-  support-methods-arguments: true
-  params: count=countSql
-
-logging:
-  level:
-    com.tsien.mall: debug
-  path: ./logs
-
+  profiles: prod
 
 management:
   endpoint:
@@ -52,3 +59,4 @@ info:
   app-name: TsienMall
   author: Tsien
   email: tsien16@qq.com
+
