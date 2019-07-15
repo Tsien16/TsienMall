@@ -16,8 +16,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping
 public class IndexController {
 
-    @GetMapping
+    @GetMapping("index")
     public String index() {
         return "index";
+    }
+
+    @GetMapping
+    public String homePage() {
+        return "HomePage";
     }
 }
