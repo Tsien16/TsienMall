@@ -191,10 +191,10 @@ public class OrderController {
         // 验证回调的正确性，是不是支付宝发的，还要避免重复通知
         params.remove("sign_type");
         try {
-            boolean alipayRSACheckedV2 = AlipaySignature.rsaCheckV2(params, Configs.getAlipayPublicKey(), "utf-8",
+            boolean alipayRsaCheckedV2 = AlipaySignature.rsaCheckV2(params, Configs.getAlipayPublicKey(), "utf-8",
                     Configs.getSignType());
 
-            if (!alipayRSACheckedV2) {
+            if (!alipayRsaCheckedV2) {
                 return ServerResponse.createByErrorMessage("非法请求，验证不通过，再恶意请求我就报警了");
             }
 
