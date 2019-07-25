@@ -202,8 +202,6 @@ public class OrderController {
             logger.error("支付宝验证回调异常", e);
         }
 
-        // todo 各种参数验证
-
         ServerResponse response = orderService.alipayCallback(params);
 
         if (response.isSuccess()) {
