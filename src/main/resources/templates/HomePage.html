@@ -6,12 +6,44 @@
     <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<div class="jumbotron">
-    <h1 class="display-4">TsienMall, 待开放！</h1>
-    <p class="lead">我特么在的在学Vue开发前台，等等吧</p>
-    <hr class="my-4">
-    <p>前端好难搞，求高人指点，电话：166********，算了还是不留了</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a>
+<div class="container-fluid">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- 轮播图片 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg" width="100%" alt="轮播图">
+            </div>
+            <div class="carousel-item">
+                <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg" width="100%" alt="轮播图">
+            </div>
+            <div class="carousel-item">
+                <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg" width="100%" alt="轮播图">
+            </div>
+        </div>
+
+        <!-- 左右切换按钮 -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div class="jumbotron">
+        <h1 class="display-4">TsienMall, 待开放！</h1>
+        <p class="lead">我特么在的在学Vue开发前台，等等吧</p>
+        <hr class="my-4">
+        <p>前端好难搞，求高人指点，电话：166********，算了还是不留了</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a>
+    </div>
 </div>
+
 </body>
 </html>
