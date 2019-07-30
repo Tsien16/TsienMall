@@ -1,6 +1,7 @@
 package com.tsien.mall.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
@@ -13,6 +14,7 @@ import org.springframework.web.filter.CorsFilter;
  * @date 2019/7/30 0030 15:35
  */
 
+@Configuration
 public class CorsConfig {
 
     private CorsConfiguration buildConfig() {
