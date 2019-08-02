@@ -8,25 +8,25 @@ package com.tsien.mall.constant;
  * @date 2019/6/26 0026 13:11
  */
 
-public class AlipayConsts {
+public interface AlipayConstants {
 
     /**
      * 等待付款
      */
-    public static String TRADE_STATUS_WAIT_BUYER_PAY = "WAIT_BUYER_PAY";
+    String TRADE_STATUS_WAIT_BUYER_PAY = "WAIT_BUYER_PAY";
 
     /**
      * 交易成功
      */
-    public static String TRADE_STATUS_TRADE_SUCCESS = "TRADE_SUCCESS";
+    String TRADE_STATUS_TRADE_SUCCESS = "TRADE_SUCCESS";
 
     /**
      * 成功
      */
-    public static String RESPONSE_SUCCESS = "success";
+    String RESPONSE_SUCCESS = "success";
 
     /**
      * 失败
      */
-    public static String RESPONSE_FAILED = "failed";
+    String RESPONSE_FAILED = "failed";
 }

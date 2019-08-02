@@ -753,7 +753,7 @@ public class OrderServiceImpl implements OrderService {
             return ServerResponse.createBySuccess("支付宝重复调用");
         }
 
-        if (AlipayConsts.TRADE_STATUS_TRADE_SUCCESS.equals(tradeStatus)) {
+        if (AlipayConstants.TRADE_STATUS_TRADE_SUCCESS.equals(tradeStatus)) {
             orderDO.setPaymentTime(DateTimeUtil.stringToDateTime(params.get("gmt_payment")));
             orderDO.setStatus(OrderStatusEnum.PAID.getCode());
             orderMapper.updateByPrimaryKeySelective(orderDO);

@@ -5,7 +5,7 @@ import com.alipay.api.internal.util.AlipaySignature;
 import com.alipay.demo.trade.config.Configs;
 import com.github.pagehelper.PageInfo;
 import com.google.common.collect.Maps;
-import com.tsien.mall.constant.AlipayConsts;
+import com.tsien.mall.constant.AlipayConstants;
 import com.tsien.mall.constant.Const;
 import com.tsien.mall.constant.ResponseCodeEnum;
 import com.tsien.mall.model.UserDO;
@@ -205,9 +205,9 @@ public class OrderController {
         ServerResponse response = orderService.alipayCallback(params);
 
         if (response.isSuccess()) {
-            return AlipayConsts.RESPONSE_SUCCESS;
+            return AlipayConstants.RESPONSE_SUCCESS;
         }
-        return AlipayConsts.RESPONSE_FAILED;
+        return AlipayConstants.RESPONSE_FAILED;
     }
 
     /**
