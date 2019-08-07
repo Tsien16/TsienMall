@@ -23,7 +23,7 @@ import com.tsien.mall.vo.OrderItemVO;
 import com.tsien.mall.vo.OrderProductVO;
 import com.tsien.mall.vo.OrderVO;
 import com.tsien.mall.vo.ShippingVO;
-import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -271,7 +271,8 @@ public class OrderServiceImpl implements OrderService {
             orderItemDO.setProductImage(productDO.getMainImage());
             orderItemDO.setCurrentUnitPrice(productDO.getPrice());
             orderItemDO.setQuantity(cartItem.getQuantity());
-            orderItemDO.setTotalPrice(BigDecimalUtil.multiply(productDO.getPrice().doubleValue(), cartItem.getQuantity()));
+            orderItemDO.setTotalPrice(BigDecimalUtil.multiply(productDO.getPrice().doubleValue(),
+                    cartItem.getQuantity()));
 
             orderItemList.add(orderItemDO);
         }
@@ -638,8 +639,10 @@ public class OrderServiceImpl implements OrderService {
         List<GoodsDetail> goodsDetailList = new ArrayList<>();
         List<OrderItemDO> orderItemList = orderItemMapper.listOrderItemsByUserIdAndOrderNo(userId, orderNo);
         for (OrderItemDO orderItem : orderItemList) {
-            GoodsDetail goodsDetail = GoodsDetail.newInstance(orderItem.getProductId().toString(), orderItem.getProductName(),
-                    BigDecimalUtil.multiply(orderItem.getCurrentUnitPrice().doubleValue(), 100d).longValue(), orderItem.getQuantity());
+            GoodsDetail goodsDetail = GoodsDetail.newInstance(orderItem.getProductId().toString(),
+                    orderItem.getProductName(),
+                    BigDecimalUtil.multiply(orderItem.getCurrentUnitPrice().doubleValue(), 100d).longValue(),
+                    orderItem.getQuantity());
             goodsDetailList.add(goodsDetail);
         }
 
