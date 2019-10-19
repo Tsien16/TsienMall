@@ -30,7 +30,7 @@ spring:
       name: druidDatasource
       url: jdbc:mysql://localhost:3306/tsien_mall?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       username: root
-      password: QWer12#$
+      password: 16601130186
   jackson:
     default-property-inclusion: non_null # 序列化时候，字段为空时候，key不显示
   servlet:
