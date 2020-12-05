@@ -105,7 +105,8 @@ public interface CartMapper {
      * @param checked   checked
      * @return 影响的行数
      */
-    int updateCartCheckedOrUnChecked(@Param("userId") Integer userId, @Param("productId") Integer productId, @Param("checked") Integer checked);
+    int updateCartCheckedOrUnChecked(@Param("userId") Integer userId, @Param("productId") Integer productId, @Param(
+            "checked") Integer checked);
 
     /**
      * 统计购物车中的商品数量
